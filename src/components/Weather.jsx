@@ -25,7 +25,7 @@ const Weather = ({weatherInfo}) => {
             {/* seccion superior*/}
                 <section className='bg-white/60 p-2 rounded-2xl grid grid-cols-2 items-center'>
                     <h4 className='col-span-2'>{weatherInfo?.weather[0].description}</h4>
-                    <span className='text-7xl'>{resultTempConversion}°{isCelsius ? "C" : "F"}</span>
+                    <span className='text-5xl'>{resultTempConversion}°{isCelsius ? "C" : "F"}</span>
                     <div>
                         <img src={`https://openweathermap.org/img/wn/${weatherInfo?.weather[0].icon}@4x.png`} alt="" />
                     </div>            
